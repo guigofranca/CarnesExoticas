@@ -412,7 +412,7 @@ nav a:hover {
     .linha2 {
         grid-template-columns: repeat(1, minmax(80px, 400px));
         justify-items: center;
-        column-gap: 30px;
+        row-gap: 30px;
    }
 
    .formulario-inputs {
