@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+span {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 370px;
+    height: 380px;
+    display: grid;
+    justify-items: center;
+    background-color: #fff;
+}
+
+.linha {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 400px));
+    justify-content: center;
+    row-gap: 35px
+}
+
+.linha2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 400px));
+    justify-content: center;
+    column-gap: 45px;
+    margin-top: 30px;
+}
+
+.quemSomos {
+	width: 100% - 1px;
+	padding: 2px 0 30px 0;
+	height: 280px;
+    background-color: #f2f2f2;
+	margin-top: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textQuemSomos {
+	color: black;
+    font-size: 22px;
+	text-align: center;
+    max-width: 850px;
+}
+
+#title-quemSomos {
+    margin-top: 40px;
+}
+
+.melhorRestaurante {
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+.catalogo {
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.catalogo:hover {
+	opacity: 0.8;
+}
+
+.catalogo p {
+    text-shadow: 0 0 5px black;
+    font-size: 8px;
+    color: black;
+}
+
+h1 {
+    color: black;
+    font-size: 68px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 60px;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 11px;
+    line-height: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+	font-size: 18px;
+	color: black;
+	
+}
+
+li {
+	padding: 10px 10px;
+}
+
+
+h5 {
+    color: white;
+    text-shadow: 0 0 5px gray;
+}
+
+
+.nav-bar {
+	display: flex;
+	flex-flow: column nowrap;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999; /* defina um valor alto para o z-index */
+    align-items: center;
+}
+
+#sub-title-nav {
+    margin-top: 0;
+}
+
+.faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+  
+.faq h2 {
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+  
+.faq ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.faq li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.faq h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.faq p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #5cee61;
+}
+  
+input:invalid {
+    border-color: #f44336;
+}
+  
+input:valid {
+    border-color: #4CAF50;
+}
+  
+form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+  
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+input[type="text"], input[type="email"], input[type="tel"]
+{
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+}
+  
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.formulario {
+    display: grid;
+    justify-content: center;
+}
+
+.title-formulario {
+    margin-bottom: 50px;
+}
+
+
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.lista label {
+  cursor: pointer;
+}
+
+
+.sexo {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+  
+.sexo li {
+    margin-bottom: 10px;
+}
+  
+.sexo input[type="radio"] {
+    margin-right: 10px;
+}
+  
+.sexo label {
+    cursor: pointer;
+}
+  
+.sexo input[type="radio"]:checked + label {
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+  
+
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+select:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+iframe {
+    width: 90%;
+    height: 400px;
+    border: none;
+}
+
+.loc {
+    width: 100%;
+    height: 600px;
+    border: none;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px
+}
+
+footer p {
+    color:white;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(148, 139, 139);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    justify-content: space-between;
+}
+  
+ 
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+  
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    display: flex;
+}
+  
+nav a:hover {
+    text-decoration: underline;
+}
+
+.text-logo {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    padding: 30px;
+    transition: 1s;
+}
+
+.text-logo:hover {
+    color: black;
+    background-color: white;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#imagem-logo{
+    width: 200px;
+    margin-left: 40px;
+}
+
+#first-title {
+    margin-top: 100px;
+    color: #f5f5f5;
+}
+
+@media screen and (max-width: 1150px) {
+    .linha {
+         grid-template-columns: repeat(2, minmax(80px, 400px));
+         justify-items: center
+    }
+    
+}
+
+@media screen and (max-width: 770px) {
+    /*1238 969*/
+    .linha {
+         grid-template-columns: repeat(1, minmax(80px, 400px));
+         justify-items: center
+    }
+   
+    .linha2 {
+        grid-template-columns: repeat(1, minmax(80px, 400px));
+        justify-items: center;
+        row-gap: 30px;
+   }
+
+   .formulario-inputs {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+   }
+   input[type="text"], input[type="email"], input[type="tel"] {
+        width: 300px;
+   }
+   #sub-title-nav {
+    font-size: 25px;
+   }
+
+   span {
+    width: 340px;
+    height: 360px;
+   }
+
+   .catalogo {
+    width: 320px;
+    height: 280px;
+   }
+
+   .textQuemSomos {
+    font-size: 18px;
+   }
+
+   .text-logo {
+    margin-left: 0;
+   }
+
+   nav {
+    margin-right: 0;
+   }
+   #imagem-logo {
+    display: none;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    #first-title {
+        color: black;
+        font-size: 40px;
+    }
+
+    #sub-title-nav {
+        margin-top: 30px;
+    }
+}
