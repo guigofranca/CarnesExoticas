@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,13 +15,14 @@ span {
     display: grid;
     justify-items: center;
     background-color: #fff;
+    border-radius: 30px;
 }
 
 .linha {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 400px));
     justify-content: center;
-    row-gap: 35px
+    row-gap: 35px;
 }
 
 .linha2 {
@@ -34,10 +36,10 @@ span {
 .quemSomos {
 	width: 100% - 1px;
 	padding: 2px 0 30px 0;
-	height: 280px;
+	height: 400px;
     background-color: #f2f2f2;
 	margin-top: 100px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -53,6 +55,18 @@ span {
 
 #title-quemSomos {
     margin-top: 40px;
+}
+
+.quemSomos-div li {
+    max-width: fit-content;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.quemSomos-div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .melhorRestaurante {
@@ -79,6 +93,46 @@ span {
     text-shadow: 0 0 5px black;
     font-size: 8px;
     color: black;
+}
+ 
+.precos-main {
+    margin-top: 180px;
+    border: 1px solid black;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 1300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.precos-main p {
+    font-size: 26px;
+    line-height: 50px;
+    color: white;
+}
+
+.precos-main h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.precos-lista {
+    display: flex;
+    column-gap: 150px;
+}
+
+.precos-box {
+    display: flex;
+    justify-content: center;
+}
+
+.precos-lista li {
+    list-style: none;
+    border: 1px solid white;
 }
 
 h1 {
@@ -126,22 +180,35 @@ h5 {
     text-shadow: 0 0 5px gray;
 }
 
-
-.nav-bar {
-	display: flex;
-	flex-flow: column nowrap;
-    background-color: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; /* defina um valor alto para o z-index */
+.search-bar {
+    display: flex;
     align-items: center;
 }
 
+.search-bar button img{
+    width: 22px;
+}   
+
+.search-bar button:hover {
+    opacity: 0.8;
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    background: #c43e00;
+    cursor: pointer;
+    margin-left: 12px;  
+} 
+
+#search-input {
+    margin-bottom: 0px;
+}
+
 #sub-title-nav {
-    margin-top: 0;
+    margin-top: 170px;
 }
 
 .faq {
@@ -178,12 +245,63 @@ h5 {
     line-height: 1.5;
 }
 
+.footer-ul ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-ul ul li {
+    padding: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgb(241, 241, 241);
+}
+
+.footer-ul ul li:hover {
+    text-decoration: underline;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+}
+
+.footer-copyright {
+    background-color: rgb(31, 29, 29);
+}
+
+.footer-copyright p {
+    text-align: center;
+    color: white;
+    padding: 14px;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 40px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 
 
 input:focus {
     outline: none;
-    box-shadow: 0 0 5px #5cee61;
+    box-shadow: 0 0 5px #000000;
 }
   
 input:invalid {
@@ -219,7 +337,7 @@ input[type="text"], input[type="email"], input[type="tel"]
 }
   
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #d36b3a;
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -279,7 +397,7 @@ input[type="submit"] {
 }
 
 input[type=submit]:hover {
-    opacity: 0.8;
+    background-color: #da5518;
 }
   
 
@@ -315,18 +433,6 @@ iframe {
     flex-direction: column;
 }
 
-footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 40px
-}
-
-footer p {
-    color:white;
-}
-
 
 header {
     background-color: #333;
@@ -340,6 +446,7 @@ header {
     left: 0;
     z-index: 9999;
     justify-content: space-between;
+    height: 78px;
 }
   
  
@@ -359,13 +466,13 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin-left: 20px;
     font-size: 18px;
     display: flex;
+    opacity: 0.8;
 }
-  
+
 nav a:hover {
-    text-decoration: underline;
+    opacity: 1;
 }
 
 .text-logo {
@@ -374,13 +481,9 @@ nav a:hover {
     margin-left: 20px;
     font-size: 18px;
     padding: 30px;
-    transition: 1s;
 }
 
 .text-logo:hover {
-    color: black;
-    background-color: white;
-    opacity: .8;
     cursor: pointer;
 }
 
@@ -394,12 +497,99 @@ nav a:hover {
     color: #f5f5f5;
 }
 
+@media screen and (max-width: 1400px) {
+    
+    .search-bar {
+        width: 400px;
+    }
+
+    .search-bar button img{
+        width: 18px;
+    }   
+    
+    .search-bar button{
+        height: 40px;
+        width: 60px;
+        margin-left: 12px;  
+    } 
+    
+    #search-input {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    
+    .search-bar {
+        width: 300px;
+    }
+
+    .search-bar button img{
+        width: 18px;
+    }   
+    
+    .search-bar button{
+        height: 36px;
+        width: 77px;
+        margin-left: 12px;  
+    } 
+    
+    #search-input {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    
+    .precos-lista li p {
+        font-size: 20px;
+    }
+    .precos-main h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    
+    .search-bar {
+        display: none
+    }
+}
+
 @media screen and (max-width: 1150px) {
     .linha {
          grid-template-columns: repeat(2, minmax(80px, 400px));
          justify-items: center
     }
     
+}
+
+@media screen and (max-width: 1045px) {
+    .quemSomos {
+        height: 450px;
+    }
+    .quemSomos-div ul {
+        display:flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .precos-lista {
+        column-gap: 20px;
+    }
+    
+    .precos-lista li p {
+        font-size: 15px;
+        width: 200px;
+        height: 120px;
+    }
+    .precos-main h2 {
+        font-size: 22px;
+    }
+    .precos-main {
+        height: 550px;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -420,9 +610,11 @@ nav a:hover {
         align-items: center;
         flex-direction: column;
    }
+
    input[type="text"], input[type="email"], input[type="tel"] {
         width: 300px;
    }
+
    #sub-title-nav {
     font-size: 25px;
    }
@@ -430,6 +622,7 @@ nav a:hover {
    span {
     width: 340px;
     height: 360px;
+
    }
 
    .catalogo {
@@ -463,5 +656,56 @@ nav a:hover {
 
     #sub-title-nav {
         margin-top: 30px;
+    }
+
+
+    .precos-lista {
+        column-gap: 20px;
+    }
+    
+    .precos-lista li p {
+        font-size: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .precos-main h2 {
+        font-size: 22px;
+    }
+    .precos-main {
+        height: 600px;
+        width: 95%;
+    }
+
+    .quemSomos-div h3 {
+        font-size: 17px;
+        text-align: center;
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .quemSomos-div li {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .quemSomos {
+        height: 450px;
+    }
+
+    .quemSomos-div h3 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .quemSomos {
+        height: 450px;
+    }
+
+    .quemSomos-div h3 {
+        width: 350px;
     }
 }
