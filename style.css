@@ -102,7 +102,7 @@ span {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: 600px;
     width: 1300px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 20px;
@@ -580,15 +580,15 @@ nav a:hover {
     }
     
     .precos-lista li p {
-        font-size: 15px;
-        width: 200px;
-        height: 120px;
+        font-size: 18px;
+        width: 34   0px;
+        height: 60px;
     }
     .precos-main h2 {
         font-size: 22px;
     }
     .precos-main {
-        height: 550px;
+        height: 600px;
     }
 }
 
@@ -665,14 +665,20 @@ nav a:hover {
     
     .precos-lista li p {
         font-size: 15px;
-        width: 150px;
-        height: 150px;
+
     }
+
+    .precos-main li {
+        width: 220px;
+        height: 100px;
+    }
+
     .precos-main h2 {
         font-size: 22px;
     }
+
     .precos-main {
-        height: 600px;
+        height: 790px;
         width: 95%;
     }
 
@@ -687,6 +693,24 @@ nav a:hover {
 @media screen and (max-width: 550px) {
     .quemSomos-div li {
         display: none;
+    }
+
+    .precos-lista {
+        flex-direction: column;
+    }
+
+    .precos-main li {
+        width: 300px;
+        height: fit-content;
+    }
+
+    .precos-main h2 {
+        font-size: 20px;
+    }
+
+    .precos-main {
+        height: 850px;
+        width: 95%;
     }
 }
 
