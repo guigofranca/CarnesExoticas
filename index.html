@@ -1,292 +1,78 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
-    <link href="./icon-TITLE.ico" rel="shortcut icon">
-    <title>Carnes Exóticas</title>
-
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div id="setor-principal">
+  <main>
+    <section id="inicio">
+      <h1>Quiz</h1>
+      <p>Domine um novo tema de forma divertida e interativa.</p>
+    </section>
+  </main>
+
+
+  <div id="cards">
     
-      <header>
-
-        <div class="logo">
-          <img id="imagem-logo" src="./IMAGENS/Untitled_Design__2_-removebg-preview.png">
-        </div>
-
-        <div class="search-bar">
-            <input id="search-input" type="text" placeholder="Procurar">
-            <button type="submit"><img src="./IMAGENS/search.png" id="search-img"></button>
-        </div>
-
-        <nav>
-          <a href="#"><p class="text-logo">Início</p></a>
-          <a href="#sobre-ancora"><p class="text-logo">Sobre</p></a>
-          <a href="#contato-ancora"><p class="text-logo">Contato</p></a>
-        </nav>
+    <div id="foto1">
+      <img src="./imagens/Prancheta 1.png" alt="lâmpada">
+      <h2>Passe nos exames</h2>
+      <p>A prática leva à perfeição. Por isso nosso Quiz é perfeito para estudar.</p>
       
-
-      </header>
-
-      <div class="precos-box">
-        <div class="precos-main">
-          <h2>Melhores preços da semana</h2>
-
-          <div class="precos-lista">
-            <ul>
-              <li><p>Assado de Tira (700gramas) R$250,00/KG*</p></li>
-              <li><p>Bife Ancho (500gramas) R$695,00/KG*</p></li>
-              <li><p>Chorizo (500gramas) R$595,00/KG*</p></li>
-            </ul>
-            
-            <ul>
-              <li><p>Shoulder (1000gramas) R$295,00/KG*</p></li>
-              <li><p>Picanhas (2000gramas) R$865,00/KG*</p></li>
-              <li><p>Short Rib (700gramas) R$385,00/KG*</p></li>
-            </ul>
-
-          </div>
-
-          <h2 style="margin-top: 60px;">Horário de Funcionamento</h2>
-
-          <div class="precos-lista">
-            <ul>
-              <li><p>Segunda à sexta das 7:00hs às 19:00</p></li>
-                <li><p>
-                  Sábados das 7:00 às 15:00hs</p></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-     
-        <h2 id="sub-title-nav">Cortes para churrasco uruguaios e argentinos</h2> <br><br>
-        
-        <div class="linha">
-            
-            <span><img class="catalogo" src="./IMAGENS/shouldersteak.jpg"><h3>Shoulder Steak Angus</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/porterhouse.jpeg"><h3>Porterhouse</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/tomahawk.jpeg"><h3>Prime Ribs Tomahawk</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/Baby-Beef.jpeg"><h3>Alcatra de Novilho Jovem BabyBeef</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/tbone.jpeg"><h3>T Bone Angus</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/stickbone.jpeg"><h3>Assado de Tiras Angus</h3></span>
-
-        </div>
-
-        <h2 class="melhorRestaurante">Cortes mais famosos</h2>
-
-        <div class="linha">
-            
-            <span><img class="catalogo" src="./IMAGENS/angus.jpeg"><h3>Ancho Angus Uruguaio</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/lagarto.jpg"><h3>Lagarto, Patinho, Carne Moída, Alcatra</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/chorizo.jpeg"><h3>Ancho e Chorizo</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/picanhas.jpeg"><h3>Picanhas Argentinas e Uruguaias</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/linguiças.jpg"><h3>Linguiças</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/short-rib.jpg"><h3>Short Rib</h3></span>
-
-        </div>
-
-        <h2 class="melhorRestaurante">Cortes exóticos</h2>
-        
-        <div class="linha">
-            
-            <span><img class="catalogo" src="./IMAGENS/avestruz2.jpeg"><h3>Cortes de Avestruz</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/cabrito.jpeg"><h3>Cortes de Cabrito</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/codorna.jpeg"><h3>Codornas Raça Européia</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/skirt-steak.jpg"><h3>Skirt Steak</h3></span>
-            <span ><img class="catalogo" src="./IMAGENS/coelho.jpeg"><h3 id="sobre-ancora">Coelhos Inteiros ou em Cortes</h3></span>
-            <span><img class="catalogo" src="./IMAGENS/javali.jpg"><h3>Pernil de Javali</h3></span>
-
-        </div>
-
-        <div class="quemSomos">
-            
-            <h2 id="title-quemSomos">Quem Somos</h2>
-            <h3 class="textQuemSomos">Delícias da Carne Exóticas e Cortes Uruguaios e Argentinos.</h3>
-
-            <br><br><br><br>
-
-            <div class="quemSomos-div">
-            
-                <ul>
-                  <li>Nós comemos</li>
-                  <li>Nós bebemos</li>
-                  <li>Nós cozinhamos</li>
-                  <li>Nós viajamos para descobrir novos sabores </li>
-                  <li>Nós conversamos sobre novos sabores</li>
-                </ul>. 
-
-              <h3 class="textQuemSomos">Nós acreditamos que comer é uma das grandes maravilhas da vida. Há quarenta anos comercializando produtos de qualidade. 
-                  Cortes  Uruguaios e Argentinos. Filé de Peixes, Haddock Escocês, Vieiras Importadadas, Tentáculos.</h3>
-
-            </div>
-
-        </div>
-
-        <div class="faq">
-            <h2>Dúvidas Frequentes</h2>
-            <ul>
-              <li>
-                <h3>Quando chega novos produtos?</h3>
-                <p>Todas as quintas-feiras novos produtos.</p>
-              </li>
-              <li>
-                <h3>Vocês entregam em casa?</h3>
-                <p>Nas compras acima de R$50,00 sua encomenda é entregue sem custos adicionais no conforto do seu lar, estando ele dentro da região metropolitana do Rio de Janeiro.</p>
-              </li>
-              <li>
-                <h3 id="contato-ancora">Vocês entregam aos finais de semana?</h3>
-                <p>Não, nossas entregas ocorrem de segunda a sexta.</p>
-              </li>
-            </ul>
-          </div>
-        
     </div>
 
-    <form>
+    <div id="foto2">
+      <img src="./imagens/Prancheta 2.png" alt="cérebro">
+      <h2>Teste sua Compreensão</h2>
+      <p>Garanta que você entendeu completamente o que estudou.</p>
+    </div>
 
-      <div class="formulario">
-
-      <div class="title-formulario">
-        <h2>Contato</h2>
-      </div>
-
-      <div class="formulario-inputs">
-        <label for="nome">Nome:</label>
-        <input pattern="[A-Za-z]{1,255}" type="text" id="nome" name="nome" title="Por favor, coloque um nome válido" required>
-      </div>
-
-      <div class="formulario-inputs">
-        <label for="email">E-mail:</label>
-        <input title="Por favor, coloque um e-mail válido" pattern="(?![_.-@#$%¨&*()123456789´~^])((?![_.-][_.-])[\w.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}" type="email" id="email" name="email" required>
-      </div>
+    <div id="foto3">
+      <img src="./imagens/Prancheta 3.png" alt="compartilhar">
+      <h2>Compartilhe e Descubra</h2>
+      <p>Compartilhe com seus colegas os Simulados online.</p>   
       
-      <div class="formulario-inputs">
-        <label for="tel">Telefone:</label>
-      <input pattern="\(?\+[0-9]{1,3}\)? ?-?[0-9]{1,3} ?-?[0-9]{3,5} ?-?[0-9]{4}( ?-?[0-9]{3})? ?(\w{1,10}\s?\d{1,6})?" placeholder="+xx xx xxxxx-xxxx" title="Por favor, coloque um número válido" type="tel" id="tel" name="tel" required>
-      </div>
+    </div>
+  </div>
 
-      <div>
-        <ul class="sexo"><p style="font-size: 22px; margin-bottom: 15px; margin-top: 20px; font-weight: bold;">Sexo:</p>
+  <div id="formiga">
+    <img id="formigafoto" src="./imagens/formiga.png" alt="formiga">
+    <p>Você já deve conhecer a história da Cigarra e a Formiga né?. A história conta que a  Formiga trabalha muito duro embaixo do sol durante o verão, e a Cigarra cantava e dançava, zombando da que trabalhava. Quando chegou o inverno, enquanto a Formiga estava aquecida e alimentada, a Cigarra passava frio e fome. Então, precisou pedir ajuda para a Formiga. A pergunta que fica é: com qual personagem você mais se identifica? Com a “Cigarra” ou com a “Formiga”?</p>
+    <p>Infelizmente, encontramos várias Cigarras por aí  vistas como exemplos de sucesso, entusiasmando maus hábitos e provocando a inversão de valores. Dessa forma, a Formiga  se mostra menos interessante, principalmente pela opção por trabalhar sob o sol”. Mas precisamos refletir: por que é importante poupar para garantir condições favoráveis ao consumo no futuro?</p>
+    <p>Lidar com dinheiro não é nada fácil, pois é muito difícil de conseguir, assim nós precisamos aprender a como tomar conta dele para que possamos nunca ter que passar dificuldades. Para isso, estudamos sobre a educação financeira!</p>
+    <p>Para testar o que você sabe sobre como cuidar do dinheiro, vamos responder algumas perguntas.</p>
+  </div>
+  
+  <div class="button-show"><button id="show-btn">Começar quiz</button>
+  </div>
 
-          <li>
-            <label for="sexo1"><input type="radio" id="sexo1" name="opcao"> Masculino</label>
-          </li>
-
-          <li>
-            <label for="sexo2"><input type="radio" id="sexo2" name="opcao"> Feminino</label>
-          </li>
-
-          <li>
-            <label for="sexo3"><input type="radio" id="sexo3" name="opcao" checked> Não informar</label>
-          </li>
-
-        </ul>
-        
-      </div>
-
-      <div>
-        <label ><p style="font-size: 22px; margin-bottom: 20px; margin-top: 20px; font-weight: bold;">Carne preferida:</p>
-        <select type="text">
-
-          <option value="">Bovina</option>
-          <option value="-18">Aves</option>
-          <option value="+18">Suína</option>
-          <option value="+60">Exóticas</option>
-
-        </select></label>
-
-      </div>
-
-      <div>
-        <ul class="lista"><h3>Deseja receber informações por:</h3>
-
-          <li>
-            <label for="item4"><input type="checkbox" id="item4"> Ligação</label>
-          </li>
-
-          <li>
-            <label for="item2"><input type="checkbox" id="item2"> SMS</label>
-          </li>
-
-          <li>
-            <label for="item3"><input type="checkbox" id="item3"> E-mail</label>
-          </li>
-
-          <li>
-            <label for="item1"><input type="checkbox" id="item1" checked> Todos os meios</label>
-          </li>   
-
-        </ul>
-
-      </div>
-    
-        <input id="btnCadastrar" type="submit" value="Cadastrar">
-    
-      </div>
-      </form>
-
-      <div class="loc">
-
-        <h1>Localização</h1>
-        <h3 style="margin-bottom: 40px;">Rua Voluntários da Pátria, 340 loja F - Botafogo - Rio de Janeiro - RJ</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.23558177493163!2d-43.19395573341512!3d-22.954474731307066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe098bdb6fb%3A0xc40436dcdc0bff67!2sR.%20Volunt%C3%A1rios%20da%20P%C3%A1tria%2C%20340%20F%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022270-010!5e0!3m2!1spt-BR!2sbr!4v1678143579704!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
-      </div>
-
-      <div>
-
-        <footer>
-          <div class="footer-main">
-            <div class="footer-ul">
-              <ul>
-                <p>Conheça-nos
-                  <li>Quem somos</li>
-                  <li>Comunidade</li>
-                  <li>Acessibilidade</li>
-                </p>
-              </ul>
-            </div>
+  <div class="app" id="hide">
+    <h1>Educação $</h1>
+    <div class="quiz">
+      <h2 id="pergunta"></h2>
+      <div id="answer-buttons"></div>
+      <button id="next-btn"></button>
+    </div>
+  </div>
+</div>
 
 
-            <div class="footer-ul">
-              <ul>
-                <p>Pagamento<li>Meios de pagamento</li></p>
-              </ul>
-            </div>
-
-
-            <div class="footer-ul">
-              <ul>
-                <p>Deixe-nos ajudar você
-                  <a><li>Sua conta</li></a>
-                  <a><li>Reembolsos</li></a>
-                  <a><li>Frete e prazo de entrega</li></a>
-                  <a><li>Ajuda</li></a>
-                </p>
-              </ul>
-            </div>
-          </div>
-        
-        </footer>
-
-        <div class="footer-copyright">
-          <p>© Delicias da Carne Exótica. Todos os direitos reservados.</p>
-        </div>
-
-      </div>
-   
-
-     <script src="script.js"></script>
-
-
+  <script src="./script.js"></script>
 </body>
-
 </html>
